@@ -1,0 +1,89 @@
+.navbar-toggler-icon {
+    background-image: url('Images/Icons/Hamburger.svg') !important;
+}
+  
+.navbar-custom {
+    background-color: #0f0f0ed3;
+    z-index: 1;
+}
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+.nav-item {
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 992px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    .nav-link:hover {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+}
+.navbar-collapse {
+    margin-right: 4vw;
+}
+
+.nav-item {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("Images/HomePage/Lion\ Background.jpg");
+  
+    /* Full height */
+    height: 90vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    font-weight: 900;
+    font-size: 1.5em;
+  }
+
+.About {
+    padding-top: 30px;
+}
+.footerul{
+    list-style-type: none;
+    
+}
+
+footer li{
+    display: inline-block;
+}
+
+footer{
+    background-color: rgb(160, 159, 158);
+    height: 100px;
+}
+.vidresponsive{
+    width: 100%;
+}
