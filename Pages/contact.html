@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasper Wearing Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script>
+      (function(){
+        emailjs.init('pezASc9sGs0o_hRzi'); 
+      })();
+    </script>
+  
+</head>
+<body>
+  <!-- This is the code for my nav bar -->
+  <section>
+    <nav class="navbar navbar-expand-lg  s navbar-custom ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">jWear Media</a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+          <ul class="navbar-nav bs-white ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="photo.html">Photo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section>
+    <div class="contact-text">
+        <h2 class="text-center">Contact</h2>
+        <h4 class="text-center">Let's talk about what you need</h4>
+    </div>
+    <div class="d-flex align-items-center justify-content-center contactform">
+        <form class="contact" id="myForm">
+            <div class="row">
+              <div class="col">
+                <label  for="inputName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+              </div>
+              <div class="col">
+                <label  for="inputTime" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+              </div>
+            </div>
+              <div class="row">
+                   <label  for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="example@example.com">
+                </div>
+              <div class="row">
+                    <label  for="inputDate" class="form-label">What do you want to say</label>
+                    <input type="text" class="form-control" id="formText" placeholder="Type Here..." > 
+                </div>
+              <div class="text-center ">
+                <button type="submit" class="btn btn-primary submitbtn">Submit</button>
+              </div>
+          </form>
+    </div>
+  </section>
+
+
+  <!-- This is the code for my footer -->
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.facebook.com/jwearmedia/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.instagram.com/jwear.media/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Email -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="mailto:jasperwearing@gmail.com"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </section>
+  
+    </div>
+  
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright: jWear Media
+    </div>
+  
+  </footer>
+<script>
+document.getElementById('myForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var firstName = document.getElementById('inputFirstName').value;
+  var lastName = document.getElementById('inputLastName').value;
+  var email = document.getElementById('inputEmail').value;
+  var text = document.getElementById('formText').value;
+
+  var message = `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nMessage: ${text}`;
+
+  var subject = `Form submit (${new Date().toLocaleDateString()}, ${new Date().toLocaleTimeString()})`;
+
+  // Calls funstion to send info from form to my email
+  sendEmail('jasperwearing@gmail.com', subject, message);
+
+});
+
+function sendEmail(email, subject, message) {
+  emailjs.send('service_9wdetlw', 'template_mnnwt0d', { // Replace with your EmailJS service ID and template ID
+    to_email: email,
+    subject: subject,
+    message: message
+  })
+  .then(function(response) {
+    console.log('SUCCESS!', response.status, response.text);
+  }, function(error) {
+    console.log('FAILED...', error);
+  });
+}
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

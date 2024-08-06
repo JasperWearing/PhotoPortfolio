@@ -1,14 +1,19 @@
-.navbar-toggler-icon {
-    background-image: url('Images/Icons/Hamburger.svg') !important;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    font-family: "Lato", sans-serif;
+    
 }
-  
+.navbar{
+    height: 80px;
+}
 .navbar-custom {
-    background-color: #0f0f0ed3;
+    background-color: #53534bd3;
     z-index: 1;
 }
 .navbar-brand {
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 2em;
     color: rgb(255, 255, 255);
 }
 .nav-link {
@@ -71,6 +76,11 @@
 .About {
     padding-top: 30px;
 }
+.aboutme{
+    max-width: 500px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
 .footerul{
     list-style-type: none;
     
@@ -90,4 +100,28 @@ footer{
 .photoinfo{
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.contact{
+    max-width: 50%;
+
+}
+#formwhat{
+    padding-bottom: 200px;
+}
+
+.submitbtn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contactform{
+    margin-top: 50px;
+}
+.contact-text{
+    margin-top: 40px;
+}
+.wid{
+    margin-bottom: 50px;
+}
+.card-body{
+    padding-top: 10px;
 }
