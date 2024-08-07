@@ -5,7 +5,7 @@
     
 }
 .navbar{
-    height: 80px;
+    min-height: 80px;
 }
 .navbar-custom {
     background-color: #53534bd3;
