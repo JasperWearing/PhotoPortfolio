@@ -148,8 +148,10 @@ function sendEmail(email, subject, message) {
   })
   .then(function(response) {
     console.log('SUCCESS!', response.status, response.text);
+    alert('Form submission successful!');
   }, function(error) {
     console.log('FAILED...', error);
+    alert('Form submission failed. Please try again.');
   });
 }
 
